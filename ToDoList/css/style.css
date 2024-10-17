@@ -1,0 +1,14 @@
+header, footer {
+  background: #BC8F8FFF;
+  color: white;
+}
+li {
+  display:flex;
+  justify-content: space-between;
+}
+li span:hover {
+  cursor: pointer;
+}
+h2 {
+  color: green;
+}

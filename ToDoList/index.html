@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping list</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/shoppinglist.js"></script>
+</head>
+<body>
+<header class="p-3 d-flex justify-content-center">
+  <h1>Shopping list</h1>
+</header>
+
+<main class="p-3 d-flex justify-content-evenly">
+  <section>
+    <div>
+      <h2>Explanation</h2>
+      <p>Shopping list is a list of items you need to buy:</p>
+      <ul>
+        <li>You can add items to the list by pressing enter or clicking add</li>
+        <li>You can click an item in the list to show that you have bought it</li>
+        <li>You can click it again to undo</li>
+        <li>You can remove an item by clicking the X after it</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Add item</h2>
+      <div>
+        <label for="itemName">Item name</label>
+        <input type="text" id="itemName">
+        <button id="addButton">Add</button>
+      </div>
+
+      <div class="mt-3">
+        <button id="saveButton">Save</button>
+        <button id="loadButton">Load</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <h2>Shopping list</h2>
+      <ul id="shoppingList" class="">
+      </ul>
+      <div class="d-flex justify-content-between">
+        <button id="crossAllButton">Cross all</button>
+        <button id="uncrossAllButton">Uncross all</button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="p-3 d-flex justify-content-center">
+  &copy; 2024 Maureen de la Fuente
+</footer>
+</body>
+</html>
