@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bish-Bosh 2.0</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="bishbosh.js"></script>
+</head>
+<body>
+<header>
+  <h1>Bish-Bosh 2.0</h1>
+</header>
+
+<main>
+  <section>
+    <div>
+      <h2>Explanation</h2>
+      <p>Bish-Bosh is a counting game where you count out numbers in order:</p>
+      <ul>
+        <li>If the number is divisible by some number x you say "Bish"</li>
+        <li>If the number is divisible by some number y you say "Bosh"</li>
+        <li>If the number is divisible by both x and y you say "Bish-Bosh"</li>
+        <li>Otherwise you say the number</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Settings</h2>
+      <div>
+        <input type="number" min="0" id="countTo" value="100">
+        <label for="countTo">Number to count to</label>
+      </div>
+      <div>
+        <input type="number" min="0" id="bish" value="3">
+        <label for="bish">Number for Bish</label>
+      </div>
+      <div>
+        <input type="number" min="0" id="bosh" value="4">
+        <label for="bosh">Number for Bosh</label>
+      </div>
+      <div>
+        <button id="countButton">Count</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <h2>Counting</h2>
+      <pre id="output">
+    </pre>
+    </div>
+  </section>
+</main>
+<footer>
+  &copy; 2024 Maureen de la Fuente
+</footer>
+</body>
+</html>
